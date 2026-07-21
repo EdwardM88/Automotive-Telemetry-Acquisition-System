@@ -36,6 +36,7 @@ The system is split into two boards:
 > ⚠️ Make sure the ESP32 and the Arduino simulator share a **common GND** —
 > without it, the pulse signal read on GPIO 33 can be unreliable.
 
+
 ## Circuit diagram
 <img width="1169" height="827" alt="Schematic_Schema_CarProjectV1_2026-07-20" src="https://github.com/user-attachments/assets/31301fc3-5149-4e53-9a9e-3fa4c031dfa1" />
 
@@ -75,6 +76,10 @@ CAN0.setMode(MCP_LISTENONLY);  // read-only, never transmits
 3. Select your ESP32 board, set the correct COM port, and upload.
 4. (Optional) Flash `ArduinoCode` to a separate Arduino Uno
    to simulate engine pulses without a real vehicle.
+
+## Python code - important
+  -Before run python code,close **Serial Monitor** window in ArduinoIDE if you use it!
+  -To stop saving data,press CTRL+C.
 
 ## Roadmap / ideas
 
