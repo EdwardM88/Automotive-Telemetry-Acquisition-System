@@ -76,6 +76,7 @@ CAN0.setMode(MCP_LISTENONLY);  // read-only, never transmits
 3. Select your ESP32 board, set the correct COM port, and upload.
 4. (Optional) Flash `ArduinoCode` to a separate Arduino Uno
    to simulate engine pulses without a real vehicle.
+5. If you want to see data I extracted in different conditions,open `istoric_masina.json`(speed is 0 km/h because i don't measure in a real car).
 
 ## Python code - important
 * Before run python code to insert in JSON file,you must to close **Serial Monitor** in ArduinoIDE if you use it.
