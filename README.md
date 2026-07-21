@@ -78,8 +78,9 @@ CAN0.setMode(MCP_LISTENONLY);  // read-only, never transmits
    to simulate engine pulses without a real vehicle.
 
 ## Python code - important
-  > Before run python code,close **Serial Monitor** window in ArduinoIDE if you use it!
-  > To stop saving data,press CTRL+C.
+* Before run python code to insert in JSON file,you must to close **Serial Monitor** in ArduinoIDE if you use it.
+* To stop running code,press CTRL+C.
+
 
 
 ## Roadmap / ideas
