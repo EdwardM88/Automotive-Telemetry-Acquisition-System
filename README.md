@@ -37,6 +37,8 @@ The system is split into two boards:
 > without it, the pulse signal read on GPIO 33 can be unreliable.
 
 ## Circuit diagram
+<img width="1169" height="827" alt="Schematic_Schema_CarProjectV1_2026-07-20" src="https://github.com/user-attachments/assets/31301fc3-5149-4e53-9a9e-3fa4c031dfa1" />
+
 
 ## CAN bus mode — important
 
