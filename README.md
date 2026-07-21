@@ -36,15 +36,7 @@ The system is split into two boards:
 > ⚠️ Make sure the ESP32 and the Arduino simulator share a **common GND** —
 > without it, the pulse signal read on GPIO 33 can be unreliable.
 
-## Repository structure
-
-```
-firmware/
-  esp32_anti_theft/          -> main ESP32 sketch (this is the core of the project)
-  arduino_rpm_simulator/      -> Arduino Uno sketch simulating engine RPM pulses
-docs/                         -> extra notes / diagrams (optional)
-README.md
-```
+## Circuit diagram
 
 ## CAN bus mode — important
 
