@@ -68,12 +68,12 @@ CAN0.setMode(MCP_LISTENONLY);  // read-only, never transmits
 
 ## Building / Flashing
 
-1. Open `` in the Arduino IDE
+1. Open `ESPCode` in the Arduino IDE
    (or PlatformIO).
 2. Install the required libraries: `mcp_can`, `Adafruit_GFX`,
    `Adafruit_SSD1306`, `ArduinoJson`, `Adafruit_ADXL345_U`, `TinyGPS++`.
 3. Select your ESP32 board, set the correct COM port, and upload.
-4. (Optional) Flash `` to a separate Arduino Uno
+4. (Optional) Flash `ArduinoCode` to a separate Arduino Uno
    to simulate engine pulses without a real vehicle.
 
 ## Roadmap / ideas
