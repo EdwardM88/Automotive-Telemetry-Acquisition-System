@@ -11,7 +11,7 @@ The system is split into two boards:
 | Board | Role |
 |---|---|
 | **ESP32** | Main controller: reads accelerometer + GPS, talks to the CAN bus, drives the OLED display, handles deep sleep |
-| **Arduino Uno** | Bench simulator: generates a fake engine pulse (RPM) signal so the ESP32 firmware can be developed/tested without a real vehicle |
+| **Arduino Mega 2560** | Bench simulator: generates a fake engine pulse (RPM) signal so the ESP32 firmware can be developed/tested without a real vehicle |
 
 ## Hardware
 
@@ -77,6 +77,17 @@ CAN0.setMode(MCP_LISTENONLY);  // read-only, never transmits
 4. (Optional) Flash `ArduinoCode` to a separate Arduino Uno
    to simulate engine pulses without a real vehicle.
 5. If you want to see data I extracted in different conditions,open `istoric_masina.json`(speed is 0 km/h because i don't measure in a real car).
+
+## Python part
+
+* Read from serial port and write in a json file.
+* Insert json data im MongoDB.
+  
+## Requirement libaries
+
+- pyserial (for **import serial**) - use to comunicate with esp.
+- pymongo (for **from pymongo import MongoClient**) - use to insert data in MongoDB.
+  
 
 ## Python code - important
 * Before run python code to insert in JSON file,you must to close **Serial Monitor** in ArduinoIDE if you use it.
