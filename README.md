@@ -69,7 +69,8 @@ CAN0.setMode(MCP_LISTENONLY);  // read-only, never transmits
 
 ## Building / Flashing
 
-** (Because of electrical noise and wire connectivity,oled value of sensors and rpm have some interferences.) **
+** Because of electrical noise and wire connectivity,oled value of sensors and rpm have some interferences. **
+** To reduce this problems,you can add a Low-Pass Filter between Pin 9 of Arduino and Pin 33 of ESP32 **
 
 1. Open `ESPCode` in the Arduino IDE
    (or PlatformIO).
