@@ -69,6 +69,8 @@ CAN0.setMode(MCP_LISTENONLY);  // read-only, never transmits
 
 ## Building / Flashing
 
+** (Because of electrical noise and wire connectivity,oled value of sensors and rpm have some interferences.) **
+
 1. Open `ESPCode` in the Arduino IDE
    (or PlatformIO).
 2. Install the required libraries: `mcp_can`, `Adafruit_GFX`,
